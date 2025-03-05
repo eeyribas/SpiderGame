@@ -13,6 +13,6 @@ glut32.lib --> $(MSDevDir)....\VisualStudio\lib
 
 glut.h  --> $(MSDevDir)....\VisualStudio\include
 
-Running: By placing the glut32.dll file from the glut-3.7.6-bin folder into the "Debug" or "Release" folder of your compiled output, the examples will run without errors.
+Running: By placing the glut32.dll file from the glut-3.7.6-bin folder into the "Debug" or "Release" folder of your compiled output, the spider game will run without errors.
 
 Game Controls: The spider moves with the arrow keys on the keyboard.
