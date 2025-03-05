@@ -1,16 +1,16 @@
-#include<windows.h>
-#include<glut.h>
-#include<stdio.h>
-#include<time.h>
-#include<math.h>
-#include<mmsystem.h>
-#include<iostream>
-#include<fstream>
-#include<cstring>
-
-using namespace std;
+#include <windows.h>
+#include <glut.h>
+#include <stdio.h>
+#include <time.h>
+#include <math.h>
+#include <mmsystem.h>
+#include <iostream>
+#include <fstream>
+#include <cstring>
 
 #define FIX		0.02
+
+using namespace std;
 
 float degree = 0;
 float x_take = 0, y_take = 0, z_take = 0;
@@ -228,8 +228,8 @@ void Car(void)
 	glScalef(2, .5, 1);
 	glutSolidCube(.5);
 	glPopMatrix();
-
 	glTranslatef(0, 0, .25);
+
 	glPushMatrix();
 	glTranslatef(-.4, -.2, 0);
 	glColor3f(0, 0, 0);
@@ -238,8 +238,8 @@ void Car(void)
 	glColor3f(0, 0, 0);
 	glutSolidTorus(.05, .1, 8, 8);
 	glPopMatrix();
-
 	glTranslatef(0, 0, -.5);
+
 	glPushMatrix();
 	glTranslatef(-.4, -.2, 0);
 	glColor3f(0, 0, 0);
@@ -342,14 +342,14 @@ void Walk(void)
 
 void TakeForward(void) 
 {
-	x_take -= (float)sin(degree * FIX) * progress;
-	z_take -= (float)cos(degree * FIX) * progress;
+	x_take -= (float) sin(degree * FIX) * progress;
+	z_take -= (float) cos(degree * FIX) * progress;
 }
 
 void TakeBack(void) 
 {
-	x_take += (float)sin(degree * FIX) * back;
-	z_take += (float)cos(degree * FIX) * back;
+	x_take += (float) sin(degree * FIX) * back;
+	z_take += (float) cos(degree * FIX) * back;
 }
 
 void TakeRight(void) 
@@ -658,7 +658,7 @@ void DogsComplete(void)
 	glPopMatrix();
 }
 
-void DogsFunction1(void) 
+void DogsFunc(void) 
 {
 	glPushMatrix();
 	glTranslatef(1.0, 1.0, 1.0);
@@ -677,7 +677,7 @@ void DogsFunction(void)
 {
 	glPushMatrix();
 	glScalef(0.25, 0.25, 0.25);
-	DogsFunction1();
+	DogsFunc();
 	glPopMatrix();
 }
 
@@ -839,7 +839,6 @@ void SpiderLeftAntenna(void)
 	glVertex3f(0, 0, 0);
 	glVertex3f(0, 0.1, 0);
 	glEnd();
-
 	glPopMatrix();
 }
 
@@ -851,7 +850,6 @@ void SpiderRightAntenna(void)
 	glVertex3f(0, 0, 0);
 	glVertex3f(0, 0.1, 0);
 	glEnd();
-
 	glPopMatrix();
 }
 
